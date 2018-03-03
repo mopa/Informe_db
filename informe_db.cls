@@ -1,5 +1,5 @@
 %******************************************
-% Informe Style
+% Informe Double Column Style
 % Class File
 % Version 1.0
 %
@@ -21,7 +21,7 @@
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions*
 \LoadClass{article}
-\RequirePackage{ifpdf}      % Needed to pick between latex and pdflatex
+\RequirePackage{ifpdf}      
 
 %==========================================
 %	FONTS
@@ -79,12 +79,6 @@ letterpaper]{geometry}%
 \setlength{\fboxrule}{0.75pt} % Width of the border around the abstract
 
 %==========================================
-% COLORS
-%==========================================
-\definecolor{color1}{RGB}{16,50,73} % Color of the article title and sections
-\definecolor{color2}{RGB}{0,15,20} % Color of the boxes behind the abstract and headings
-
-%==========================================
 % HYPERLINKS
 %==========================================
 \usepackage{hyperref} 
@@ -97,7 +91,7 @@ letterpaper]{geometry}%
 %========================================== 
 \RequirePackage{fancyhdr}  
 \RequirePackage{lastpage}  % Number of pages in the document
-\pagestyle{fancy}          % Enables the custom headers/footers
+\pagestyle{fancy}          
 % Headers
 \lhead{}%
 \chead{}%
@@ -106,8 +100,8 @@ letterpaper]{geometry}%
 \lfoot{}%
 \cfoot{}%
 \rfoot{}%
-\renewcommand{\headrulewidth}{0pt}% % No header rule
-\renewcommand{\footrulewidth}{0pt}% % No footer rule
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
 %========================================== 
 %	SECTION/SUBSECTION/PARAGRAPH SET-UP
@@ -151,8 +145,10 @@ letterpaper]{geometry}%
 %	TABLEOFCONTENTS SET-UP
 %========================================== 
 \newlength{\tocsep} 
-\setlength\tocsep{1.5pc} % Sets the indentation of the sections in the table of contents
-\setcounter{tocdepth}{1} % Three levels in the table of contents section: sections, subsections and subsubsections
+% Sets the indentation of the sections in TOC
+\setlength\tocsep{1.5pc}
+% Three levels in TOC
+\setcounter{tocdepth}{1} 
 
 \usepackage{titletoc}
 \contentsmargin{0cm}
@@ -180,7 +176,8 @@ letterpaper]{geometry}%
 %	LIST CONTROL
 %==========================================   
 \RequirePackage{enumitem}
-%\setlist{nolistsep} % Uncomment to remove spacing between items in lists (enumerate, itemize)
+% Remove spacing between items in lists (enumerate, itemize)
+%\setlist{nolistsep}
 
 %========================================== 
 %	ABSTRACT+AUTHOR FRAME
@@ -196,7 +193,7 @@ letterpaper]{geometry}%
 \twocolumn[{%
 \thispagestyle{empty}%
 \vskip-36pt%
-{\raggedleft\small \includegraphics[height=50pt]{img/mars_u.pdf} \par}%
+{\raggedleft\small \logo \par}%
 \vskip20pt%
 {\raggedright\color{color1}\sffamily\bfseries\fontsize{20}{25}\selectfont \@PaperTitle\par}%
 \vskip10pt%

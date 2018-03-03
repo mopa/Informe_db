@@ -1,33 +1,41 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Stylish Article
-% LaTeX Template
-% Version 2.1 (1/10/15)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Mathias Legrand (legrand.mathias@gmail.com) 
-% With extensive modifications by:
-% Vel (vel@latextemplates.com)
+% Informe Double Column Template
 %
 % License:
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
+%==========================================
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%==========================================
+
+\documentclass[10pt]{informe_db}
+
+%------------------------------------------
+%	LOGO
+%------------------------------------------
+\newcommand{\logo}{%
+	\includegraphics[height=50pt]{img/pl-logo.jpg}
+}
+
+%------------------------------------------
+%	COLORS
+%------------------------------------------
+% Color of the article title and sections
+\definecolor{color1}{RGB}{16,50,73} 
+% Color of the boxes behind the abstract and headings
+\definecolor{color2}{RGB}{0,15,20} 
+
 %----------------------------------------------------------------------------------------
 
-\documentclass[10pt]{informe_db} % Document font size and equations flushed left
-
-
+\begin{document}
 %==========================================
 %	ARTICLE INFORMATION
 %==========================================
+% Article title
+\PaperTitle{Titulo del informe} 
 
-\PaperTitle{Titulo del informe} % Article title
 
 \Authors{Asignatura, Fecha.
 
@@ -37,32 +45,24 @@ Autor}
 %==========================================
 %	ABSTRACT
 %==========================================
-
 \Abstract{Well, then good news! It's a suppository. I'm sure those windmills will keep them cool. I don't know what you did, Fry, but once again, you screwed up! Now all the planets are gonna start cracking wise about our mamas.
 
 Calculon is gonna kill us and it's all everybody else's fault! Check it out, y'all. Everyone who was invited is here. Goodbye, friends. I never thought I'd die like this. But I always really hoped. Dear God, they'll be killed on our doorstep! And there's no trash pickup until January 3rd.
 
 Shinier than yours, meatbag. Tell her she looks thin. You are the last hope of the universe. I guess if you want children beaten, you have to do it yourself.}
 
-%----------------------------------------------------------------------------------------
 
-\begin{document}
 
-\flushbottom % Makes all text pages the same height
-
-\maketitle % Print the title and abstract box
-
-\tableofcontents % Print the contents section
-
-\thispagestyle{empty} % Removes page numbering from the first page
+\flushbottom 
+\maketitle 
+\tableofcontents 
+\thispagestyle{empty} 
 
 %==========================================
 %	ARTICLE CONTENTS
 %==========================================
-
-\section*{Introducción} % The \section*{} command stops section numbering
-
-\addcontentsline{toc}{section}{Introducción} % Adds this section to the table of contents
+\section*{Introducción} 
+\addcontentsline{toc}{section}{Introducción} 
 
 Well, thanks to the Internet, I'm now bored with sex. Is there a place on the web that panders to my lust for violence? You guys go on without me! I'm going to go… look for more stuff to steal! Oh, I don't have time for this. I have to go and buy a single piece of fruit with a coupon and then return it, making people wait behind me while I complain.
 
@@ -110,15 +110,14 @@ For the last time, I don't like lilacs! Your 'first' wife was the one who liked 
 
 %------------------------------------------------
 \phantomsection
-\section*{Agradecimientos} % The \section*{} command stops section numbering
-
-\addcontentsline{toc}{section}{Agradecimientos} % Adds this section to the table of contents
+\section*{Agradecimientos} 
+\addcontentsline{toc}{section}{Agradecimientos}
 
 With a warning label this big, you know they gotta be fun! Guess again. We're also Santa Claus! I decline the title of Iron Cook and accept the lesser title of Zinc Saucier, which I just made up. Uhh… also, comes with double prize money.
 
-%----------------------------------------------------------------------------------------
+%==========================================
 %	REFERENCE LIST
-%----------------------------------------------------------------------------------------
+%==========================================
 \phantomsection
 \bibliographystyle{unsrt}
 \bibliography{references}
